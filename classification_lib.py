@@ -378,7 +378,7 @@ class NaiveClassifier:
             distrib_func = DistributionDiscretizer(nbins=8)
 
         self.distrib_func = distrib_func
-        self.column_names = column_names
+        self.column_names = np.array(column_names)
         self.class_names = None
         self.class_probs = {}
 
